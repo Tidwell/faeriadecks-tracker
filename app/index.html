@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>FaeriaDecks Tracker</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic|Alegreya:400,400i,700,700i' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="deck-loader">
+        <h2>Enter the Deck Url</h2>
+        <p>Curreny support The Hub.</p>
+        <p>ex: https://www.faeria.com/the-hub/deck/563-causalidad-s-blue-conquest</p>
+        <input type="text" />
+        <br />
+        <button load-deck>Load</button>
+        <button cancel>Cancel</button>
+      </div>
+
+      <ul class="deck-list">
+        
+      </ul>
+    </div>
+
+    <div class="menu-bar">
+      <a reset-deck alt="Reset Counts"></a>
+      <a import-deck alt="Import Deck"></a>
+    </div>
+  </body>
+  <script>
+    // You can also require other files to run in this process
+    require('./assets/js/ex-links.js')
+    require('./assets/js/notifications.js')
+    require('./assets/js/actions/zoom.js')
+    //require('./assets/js/context-menu.js')
+
+    require('./assets/js/decklist.js')
+  </script>
+</html>

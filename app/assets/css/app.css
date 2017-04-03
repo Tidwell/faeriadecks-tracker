@@ -1,0 +1,183 @@
+/* Add styles for your app here */
+
+/* Use UI System fonts and colors,
+   see: https://www.sitepoint.com/css-system-styles/ */
+* {
+	box-sizing: border-box;
+}
+body {
+	cursor: default;
+	font-size: 16px;
+	font-family: "Open Sans";
+	background: black;
+}
+
+.menu-bar {
+	background: linear-gradient(to bottom, #000 0, #111 31%, #1c1c1c 74%, #131313 100%);
+	height: 70px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+.menu-bar a {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 10px 0;
+	cursor: pointer;
+}
+a[reset-deck] {
+	background-image: url('../img/reset-deck.png');
+}
+a[import-deck] {
+	background-image: url('../img/import-deck.png');
+}
+.deck-list {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	-webkit-user-select: none;
+}
+.deck-list li {
+	cursor: pointer;
+	list-style-type: none;
+	position: relative;
+	overflow: hidden;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0 0 0 .25em;
+	background-position: center right;
+	background-size: cover;
+	width: 100%;
+	min-height: 40px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.deck-list li span.card-count {
+	position: relative;
+	z-index: 2;
+	float: right;
+	background-color: #001920;
+	padding: 0 5px;
+	line-height: 30px;
+	margin: 5px;
+}
+.card-name {
+	display: inline-block;
+	margin: 10px 0 0 0;
+	position: relative;
+	z-index: 2;
+	-webkit-font-smoothing: antialiased;
+	font: 700 12px/ 20px "Open Sans";
+}
+
+.gradiant-bg {
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.gradiant-bg.gradiant--neutral {
+	background-image: linear-gradient(to right, #001920 19px, #201f1d 40%, rgba(32, 31, 29, 0.5) 100%);
+}
+.gradiant-bg.gradiant--water, .gradiant-bg.gradiant--lake {
+	background-image: linear-gradient(to right, #001920 19px, #00163c 40%, rgba(0, 22, 60, 0.5) 100%);
+}
+.gradiant-bg.gradiant--desert {
+	background-image: linear-gradient(to right, #001920 19px, #2f1b00 40%, rgba(47, 27, 0, 0.5) 100%);
+}
+.gradiant-bg.gradiant--mountain {
+	background-image: linear-gradient(to right, #001920 19px, #290a04 40%, rgba(41, 10, 4, 0.5) 100%);
+}
+.gradiant-bg.gradiant--forest {
+	background-image: linear-gradient(to right, #001920 19px, #1e2e05 40%, rgba(30, 46, 5, 0.5) 100%);
+}
+
+.faeria-cost {
+	position: relative;
+    background-image: url('../img/faeria-cost.png');
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    color: #001920;
+    font: 700 20px/40px "Open Sans";
+    text-align: center;
+    z-index: 2;
+}
+
+
+.icon:empty {
+	display: none;
+}
+.icon {
+	font: 700 16px/ 29px "Open Sans";
+    text-align: center;
+    padding-top: 10px;
+	position: relative;
+	z-index: 2;
+	display: inline-block;
+	background-position: center;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+.icon:not(:empty)+.icon {
+    margin-left: -10px;
+}
+.icon.icon-land-forest--cost {
+	width: 34px;
+	height: 39px;
+	background-image: url('../img/icon-lands-cost_sprite.png');
+	background-position: 0 -2px;
+	color: #5bb21b;
+}
+.icon.icon-land-mountain--cost {
+	width: 34px;
+	height: 39px;
+	background-image: url('../img/icon-lands-cost_sprite.png');
+	background-position: 0 -41px;
+	color: #cf3201;
+}
+.icon.icon-land-desert--cost {
+	width: 34px;
+	height: 39px;
+	background-image: url('../img/icon-lands-cost_sprite.png');
+	background-position: 0 -80px;
+	color: #e5a018;
+}
+.icon.icon-land-lake--cost, .icon.icon-land-water--cost {
+	width: 34px;
+	height: 39px;
+	background-image: url('../img/icon-lands-cost_sprite.png');
+	background-position: 0 -120px;
+	color: #0091e5;
+}
+
+.depleated {
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,.8);
+}
+
+.deck-loader {
+	color: white;
+}

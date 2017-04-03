@@ -1,0 +1,30 @@
+{
+  "name": "FaeriaDecksTracker",
+  "productName": "FaeriaDecks Tracker",
+  "description": "FaeriaDecks Deck Tracker",
+  "version": "0.0.1",
+  "homepage": "https://github.com/BZCoding/SkelEktron",
+  "author": {
+    "name": "FaeriaDecks",
+    "email": "aaron.tidwell@gmail.com",
+    "url": "https://www.faeriadecks.com/"
+  },
+  "license": "MIT",
+  "main": "main.js",
+  "electronVersion": "1.0.0",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "devtron": "^1",
+    "electron-debug": "^1",
+    "electron-is-dev": "^0.1",
+    "electron-window-state": "^3",
+    "lodash": "^4",
+    "request": "^2.81.0"
+  },
+  "config": {
+    "url": "index.html",
+    "update": {
+      "url": false
+    }
+  }
+}
