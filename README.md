@@ -1,3 +1,9 @@
+### Based on SkelEktron
+
+---
+No README Yet... so heres SkelEktron's docs
+---
+
 # SkelEktron
 
 An unofficial [Electron](http://electron.atom.io) Application template.
